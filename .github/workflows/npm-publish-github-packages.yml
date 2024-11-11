@@ -62,7 +62,7 @@ jobs:
       
       # 如果 package.json 在 backend 文件夹
       - name: Publish package
-        working-directory: ./backend  # 指定包含 package.json 的目录
+        working-directory: ./Backend  # 指定包含 package.json 的目录
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
