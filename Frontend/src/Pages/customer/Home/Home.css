@@ -1,0 +1,33 @@
+.hero-section {
+    background: url(../../../public/Hero.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero-section .container {
+    height: 70vh;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}

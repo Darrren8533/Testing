@@ -1,0 +1,112 @@
+/* 继承管理员版本的样式 */
+.property-slideshow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.property-slideshow-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+  
+.property-slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px !important; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.property-slideshow-button.left {
+    left: 0;
+}
+
+.property-slideshow-button.right {
+    right: 0;
+}
+
+/* 版主特有的样式 */
+.status-pending {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+.status-approved {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.request-property-button {
+    background-color: #87cd51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.request-property-button:hover {
+    background-color: #78b846;
+}
+
+.property-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.property-form-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.property-form-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.property-form-close-button:hover {
+    color: #333;
+}

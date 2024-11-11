@@ -1,0 +1,124 @@
+.property-slideshow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .property-slideshow-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .property-slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px !important; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+    box-sizing: border-box; 
+  }
+  
+  .property-slideshow-button.left {
+    left: 0; 
+  }
+  
+  .property-slideshow-button.right {
+    right: 0; 
+  }
+  
+
+
+.property-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.property-form-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+.property-form-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    z-index: 1001;
+    padding: 0;
+}
+
+.property-form-close-button:hover {
+    color: #ff0000; 
+}
+
+
+
+.create-property-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-property-button:hover {
+    background: var(--hoverColor);
+    color: var(--blackColor);
+}
+
+.property-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    z-index: 1001;
+    padding: 0;
+}
+
+
+.property-close-button:hover {
+    color: #ff0000; 
+}
