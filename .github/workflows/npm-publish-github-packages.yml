@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: List directory structure
+        run: ls -la
           
       - name: Check for package-lock.json in subdirectories and install dependencies
         run: |
@@ -29,7 +31,7 @@ jobs:
       
       # 如果 package.json 在 backend 文件夹
       - name: Run tests
-        working-directory: ./backend  # 指定包含 package.json 的目录
+        working-directory: ./Backend  # 指定包含 package.json 的目录
         run: npm test
 
   publish-gpr:
