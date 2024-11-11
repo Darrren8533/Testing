@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          
       - name: Check for package-lock.json in subdirectories and install dependencies
         run: |
           for dir in */; do
@@ -25,7 +26,10 @@ jobs:
               echo "No package-lock.json in $dir, skipping npm ci"
             fi
           done
+      
+      # 如果 package.json 在 backend 文件夹
       - name: Run tests
+        working-directory: ./backend  # 指定包含 package.json 的目录
         run: npm test
 
   publish-gpr:
@@ -40,6 +44,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
+          
       - name: Check for package-lock.json in subdirectories and install dependencies
         run: |
           for dir in */; do
@@ -52,7 +57,10 @@ jobs:
               echo "No package-lock.json in $dir, skipping npm ci"
             fi
           done
+      
+      # 如果 package.json 在 backend 文件夹
       - name: Publish package
+        working-directory: ./backend  # 指定包含 package.json 的目录
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
