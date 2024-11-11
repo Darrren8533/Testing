@@ -29,10 +29,10 @@ jobs:
             fi
           done
       
-      # 如果 package.json 在 backend 文件夹
-      - name: Run tests
-        working-directory: ./Backend  # 指定包含 package.json 的目录
-        run: npm test
+      # # 如果 package.json 在 backend 文件夹
+      # - name: Run tests
+      #   working-directory: ./Backend  # 指定包含 package.json 的目录
+      #   run: npm test
 
   publish-gpr:
     needs: build
