@@ -1,0 +1,94 @@
+.footer {
+    padding: 4rem 6rem;
+    background: #493829;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.top p {
+    font-size: 1.5rem;
+    padding: 1rem 0 .8rem 0;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.icon:hover {
+    color: #816C5B;
+}
+
+.bottom {
+    display: flex;
+    gap: 8rem;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0 .8rem 0;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.bottom a:hover {
+    color: #a38d7b;
+    transform: translateX(5px);
+}
+
+.bottom p {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.bottom p .icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media(max-width: 850px) {
+    .footer {
+        padding: 3rem 2rem;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .bottom div {
+        width: 100%;
+    }
+}

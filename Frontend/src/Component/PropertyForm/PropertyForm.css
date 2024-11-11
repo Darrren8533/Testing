@@ -1,0 +1,80 @@
+.property-listing-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+  }
+  
+  .property-listing-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .property-listing-form-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 8px); 
+  }
+  
+  .property-listing-form-group.full-width {
+    width: 100%;
+  }
+  
+  .property-listing-form-group label {
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .property-listing-form-group input[type="text"],
+  .property-listing-form-group input[type="number"],
+  .property-listing-form-group input[type="file"],
+  .property-listing-form-group textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .property-listing-form-group input[type="text"]:focus,
+  .property-listing-form-group input[type="number"]:focus,
+  .property-listing-form-group input[type="file"]:focus,
+  .property-listing-form-group textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+  }
+  
+  .property-listing-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .property-listing-submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .property-listing-submit-button:hover {
+    background: var(--hoverColor);
+    color: var(--blackColor);
+  }
+  
+  .property-listing-message {
+    text-align: center;
+    color: #ff3333;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
